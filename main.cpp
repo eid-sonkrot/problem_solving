@@ -14,7 +14,7 @@ int numberOfDigits(long long number, int power) {
         return (pow10[power] * power + numberOfDigits(number - pow10[power], power + 1)) % Mod; // Recursive calculation for remaining digits (with modulo operation)
 }
 
-void solution() {
+void ahmad_solve() {
     long long l, r;
     cin >> l >> r;
 
@@ -29,11 +29,13 @@ void solution() {
 }
 
 int main() {
+
     int Testcase;
     cin >> Testcase;
     // Solve the problem for several Test cases
     while (Testcase--) {
         solution();
+
     }
     return 0;
 }
