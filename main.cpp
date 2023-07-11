@@ -13,7 +13,7 @@ int numberOfDigits(long long number, int power) {
         return pow10[power] * power + numberOfDigits(number - pow10[power], power + 1); // Recursive calculation for remaining digits
 }
 
-void solution() {
+void ahmad_solve() {
     long long l, r;
     cin >> l >> r;
 
@@ -27,6 +27,13 @@ void solution() {
 }
 
 int main() {
-    solution();
+	// this code must conflict with your code
+	
+	int q;
+	cin>>q;
+    
+    while(--q) {
+    	ahmad_solve();
+    }
     return 0;
 }
